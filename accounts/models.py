@@ -10,3 +10,7 @@ class Pet(models.Model):
     additionalInfo = models.TextField(null=True, blank=True)
     photos = models.ImageField(upload_to='pet_photos/')
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    #changed
+    # images = models.JSONField() 
+    # features = models.JSONField() 
